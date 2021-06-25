@@ -1,0 +1,41 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+
+int first_it(double x, const vector<double>& v,int left, int right){
+    int mid = (right+left)/2;
+    
+    if(v[mid] < x) return first_it(x,v,mid,right);
+    else if(v[mid] > x) return first_it(x,v,left,mid);
+    else return mid;
+}
+
+
+int first_occurrence(double x, const vector<double>& v){
+    
+    int mid=v.size()/2;
+    int left = 0;
+    int right = v.size()-1;
+    mid = first_it(x,v,mid);
+    
+    return mid;
+    
+    
+}
+
+
+int main() {
+    int n;
+    while (cin >> n) {
+        vector<double> V(n);
+        for (int i = 0; i < n; ++i) cin >> V[i];
+        int t;
+        cin >> t;
+        while (t--) {
+            double x;
+            cin >> x;
+            cout << first_occurrence(x, V) << endl;
+        }
+    }
+}
