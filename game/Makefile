@@ -28,7 +28,7 @@ DUMMY_OBJ = AIDummy.o
 BOARD_OBJ = Board.o
 
 # Add here any extra .o player files you want to link to the executable
-EXTRA_OBJS = AIloser.o AIDemo.o
+EXTRA_OBJS =
 
 # Config
 OPTIMIZE = 2 # Optimization level (0 to 3)
