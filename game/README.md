@@ -1,3 +1,6 @@
-MAIN PROJECT OF EDA
+**MAIN PROJECT OF EDA**
 
-A path-finding competitive GAME
+A path-finding competitive GAME.
+
+
+My AI is named **Loser**. 
